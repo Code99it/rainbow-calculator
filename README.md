@@ -78,7 +78,7 @@ these steps:
 
 1. **Clone the repository**:
 
-git clone https://github.com/<your-username>/rainbow-calculator.git
+git clone https://github.com/Code99it/rainbow-calculator.git
 
 2. **Create a new branch** for your feature or bugfix:
 
