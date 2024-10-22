@@ -2,6 +2,10 @@
   font-size: 16px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'Calculator-Display'; 
   src: url('../fonts/DSEG7Classic-Regular.ttf') format('truetype');
@@ -16,26 +20,64 @@
   font-style: normal;
 }
 
+button {
+  cursor: pointer;
+}
+
 .calculator-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
   gap: 10px; /* Abstand zwischen den Items */
 }
 
+.calculator-container .infobar {
+  z-index: 91;
+  position: absolute;
+  display: flex;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 8px;
+  color: #080808;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.calculator-container .infobar .angle-info {
+  width: 30px;
+ }
+
 .calculator-container .display {
+  z-index: 90;
   font-family: "Calculator-Display", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.25rem;
+  min-height: 1.25rem;
   color: #191919;
   background-color: #C6C6C6;
   border: 1px solid black;
   border-radius: 3px;
   text-align: right;
-  padding: 8px;
+  padding: 16px 8px 8px 8px;
 }
 
-.calculator-container .item {
+.calculator-container .item.clear {
+  font-family: "Calculator-Keys", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  background-color: #ff3333;
+  color: #D0D0D0;
+  border: 1px solid #b8b8b8;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.calculator-container .item.number {
   font-family: "Calculator-Keys", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -48,6 +90,63 @@
   justify-content: center;
   align-items: center;
   padding: 12px 0;
+}
+
+.calculator-container .item.memory {
+  font-family: "Calculator-Keys", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  background-color: #c2c2c2;
+  border: 1px solid #909090;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.calculator-container .item.operator {
+  font-family: "Calculator-Keys", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  background-color: #fa9734;
+  border: 1px solid #909090;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.calculator-container .item.equals {
+  font-family: "Calculator-Keys", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  background-color: #62d160;
+  border: 1px solid #909090;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+#devbox {
+    margin-top:  16px;
+    font-family: 'Courier New';
+    color: #404040;
+    height: 94px;
+    width: 100%;
+    overflow-y: scroll; 
+    border: 1px solid #808080;
+    padding: 10px;
+    background-color: #f4f4f4;
 }
 
 .rainbow-line {
