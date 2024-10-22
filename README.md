@@ -1,0 +1,1 @@
+I am trying to program a calculator that displays whole numbers instead of using scientific notation.
