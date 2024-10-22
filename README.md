@@ -5,6 +5,12 @@ a simple calculator with additional features like angle unit selection
 (DEG/RAD) and operator management. The code is deployed for public 
 use and can be accessed via the provided link.
 
+> **⚠️ Important Notice:**
+>
+> The calculator is currently **not operational** as it is still under active 
+> development. Please be aware that certain features might not work as 
+> expected and the project is incomplete.
+
 ## Project Overview
 
 The **Rainbow Calculator** is a web-based calculator that allows users 
